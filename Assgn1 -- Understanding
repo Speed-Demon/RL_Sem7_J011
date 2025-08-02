@@ -1,0 +1,20 @@
+MountainCar-v0:
+Observation Space: A 2-element array containing the car's position (from -1.2 to 0.6) and velocity (from -0.07 to 0.07). Represented as $Box(2)$.
+Action Space: A set of 3 discrete actions: push left (0), no push (1), and push right (2). Represented as $Discrete(3)$.
+Goal/Objective: To get the underpowered car to the top of the hill on the right, marked by a yellow flag (position > 0.5).
+Episode Length: An episode ends if the car reaches the goal or after 200 timesteps.
+What makes it challenging: The car's engine is not powerful enough to drive straight up the steep hill. The agent must learn to build momentum by driving back and forth between the hills. This is a classic sparse reward problem, as the agent only receives a positive reward at the very end.
+
+CarRacing-v2: 
+Observation Space: A 96x96 pixel color image of the track from a top-down view. Technically, the default is a stack of 4 consecutive frames to represent motion. Represented as $Box(96, 96, 3)$ for a single frame.
+Action Space: A continuous 3-element array controlling steering (-1 to +1), acceleration (0 to +1), and braking (0 to +1). Represented as $Box(3)$.
+Goal/Objective: Drive the car around a randomly generated track to visit as many track tiles as possible within the time limit. The score is the sum of rewards from visiting tiles minus a time penalty.
+Episode Length: An episode lasts for 1000 timesteps.
+What makes it challenging: The agent must learn to drive a car from raw pixel data, which is a high-dimensional input. It needs to implicitly learn concepts like speed, turning angle, and track boundaries just by looking at the screen, which is significantly harder than learning from simple values like position and velocity.
+
+LunarLander-v2: 
+Observation Space: An 8-element array containing the lander's state: (x, y) coordinates, (vx, vy) velocities, angle, angular velocity, and two booleans indicating if each leg is touching the ground. Represented as $Box(8)$.
+Action Space: A set of 4 discrete actions: do nothing (0), fire left engine (1), fire main engine (2), and fire right engine (3). Represented as $Discrete(4)$.
+Goal/Objective: To land the lunar lander softly and safely between the two yellow flags on the landing pad. A successful landing means the lander comes to rest with zero velocity.
+Episode Length: An episode ends when the lander lands or crashes, or after 1000 timesteps.
+What makes it challenging: The agent must carefully balance thrust, orientation, and velocity to counteract gravity. Firing engines costs fuel, and crashing results in a large penalty. The agent needs to learn a precise sequence of actions to achieve a gentle touchdown without running out of fuel or losing control.
