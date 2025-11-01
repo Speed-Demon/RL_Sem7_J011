@@ -1,0 +1,105 @@
+PS C:\Users\Aryan\Documents\CodesAndDatasets\Sem 7\RL\assignments\RL_Sem7_J011\Assgn3\assignment> python .\main.py
+============================================================
+RUNNING RTDP (Real-Time Dynamic Programming)
+============================================================
+Episode 1/50: Steps = 27, Total Reward = -26.00, Epsilon = 0.500
+Episode 2/50: Steps = 40, Total Reward = -39.00, Epsilon = 0.491
+Episode 3/50: Steps = 35, Total Reward = -34.00, Epsilon = 0.482
+Episode 4/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.473
+Episode 5/50: Steps = 39, Total Reward = -38.00, Epsilon = 0.464
+Episode 6/50: Steps = 15, Total Reward = -14.00, Epsilon = 0.455
+Episode 7/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.446
+Episode 8/50: Steps = 27, Total Reward = -26.00, Epsilon = 0.437
+Episode 9/50: Steps = 17, Total Reward = -16.00, Epsilon = 0.428
+Episode 10/50: Steps = 17, Total Reward = -16.00, Epsilon = 0.419
+Episode 11/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.410
+Episode 12/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.401
+Episode 13/50: Steps = 35, Total Reward = -34.00, Epsilon = 0.392
+Episode 14/50: Steps = 10, Total Reward = -9.00, Epsilon = 0.383
+Episode 15/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.374
+Episode 16/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.365
+Episode 17/50: Steps = 10, Total Reward = -9.00, Epsilon = 0.356
+Episode 18/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.347
+Episode 19/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.338
+Episode 20/50: Steps = 9, Total Reward = -8.00, Epsilon = 0.329
+Episode 21/50: Steps = 17, Total Reward = -16.00, Epsilon = 0.320
+Episode 22/50: Steps = 12, Total Reward = -11.00, Epsilon = 0.311
+Episode 23/50: Steps = 22, Total Reward = -21.00, Epsilon = 0.302
+Episode 24/50: Steps = 20, Total Reward = -19.00, Epsilon = 0.293
+Episode 25/50: Steps = 14, Total Reward = -13.00, Epsilon = 0.284
+Episode 26/50: Steps = 15, Total Reward = -14.00, Epsilon = 0.275
+Episode 27/50: Steps = 20, Total Reward = -19.00, Epsilon = 0.266
+Episode 28/50: Steps = 21, Total Reward = -20.00, Epsilon = 0.257
+Episode 29/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.248
+Episode 30/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.239
+Episode 31/50: Steps = 20, Total Reward = -19.00, Epsilon = 0.230
+Episode 32/50: Steps = 15, Total Reward = -14.00, Epsilon = 0.221
+Episode 33/50: Steps = 13, Total Reward = -12.00, Epsilon = 0.212
+Episode 34/50: Steps = 19, Total Reward = -18.00, Epsilon = 0.203
+Episode 35/50: Steps = 16, Total Reward = -15.00, Epsilon = 0.194
+Episode 36/50: Steps = 17, Total Reward = -16.00, Epsilon = 0.185
+Episode 37/50: Steps = 9, Total Reward = -8.00, Epsilon = 0.176
+Episode 38/50: Steps = 9, Total Reward = -8.00, Epsilon = 0.167
+Episode 39/50: Steps = 10, Total Reward = -9.00, Epsilon = 0.158
+Episode 40/50: Steps = 10, Total Reward = -9.00, Epsilon = 0.149
+Episode 41/50: Steps = 10, Total Reward = -9.00, Epsilon = 0.140
+Episode 42/50: Steps = 14, Total Reward = -13.00, Epsilon = 0.131
+Episode 43/50: Steps = 14, Total Reward = -13.00, Epsilon = 0.122
+Episode 44/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.113
+Episode 45/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.104
+Episode 46/50: Steps = 15, Total Reward = -14.00, Epsilon = 0.095
+Episode 47/50: Steps = 14, Total Reward = -13.00, Epsilon = 0.086
+Episode 48/50: Steps = 20, Total Reward = -19.00, Epsilon = 0.077
+Episode 49/50: Steps = 9, Total Reward = -8.00, Epsilon = 0.068
+Episode 50/50: Steps = 11, Total Reward = -10.00, Epsilon = 0.059
+
+============================================================
+RUNNING MCTS (Monte Carlo Tree Search)
+============================================================
+Episode 1/20: Steps = 20, Total Reward = -19.00
+Episode 2/20: Steps = 36, Total Reward = -35.00
+Episode 3/20: Steps = 56, Total Reward = -55.00
+Episode 4/20: Steps = 56, Total Reward = -55.00
+Episode 5/20: Steps = 287, Total Reward = -286.00
+Episode 6/20: Steps = 467, Total Reward = -466.00
+Episode 7/20: Steps = 68, Total Reward = -67.00
+Episode 8/20: Steps = 88, Total Reward = -87.00
+Episode 9/20: Steps = 30, Total Reward = -29.00
+Episode 10/20: Steps = 129, Total Reward = -128.00
+Episode 11/20: Steps = 108, Total Reward = -107.00
+Episode 12/20: Steps = 73, Total Reward = -72.00
+Episode 13/20: Steps = 241, Total Reward = -240.00
+Episode 14/20: Steps = 230, Total Reward = -229.00
+Episode 15/20: Steps = 57, Total Reward = -56.00
+Episode 16/20: Steps = 183, Total Reward = -182.00
+Episode 17/20: Steps = 39, Total Reward = -38.00
+Episode 18/20: Steps = 284, Total Reward = -283.00
+Episode 19/20: Steps = 51, Total Reward = -50.00
+Episode 20/20: Steps = 32, Total Reward = -31.00
+
+
+============================================================
+COMPARISON: RTDP vs MCTS
+============================================================
+
+RTDP (Real-Time Dynamic Programming):
+- Uses value iteration on visited states during episodes
+- Performs Bellman backups to update state values
+- Epsilon-greedy exploration with decaying epsilon
+- Fast convergence but explores less optimally
+- Good for problems where model is known and accurate
+
+MCTS (Monte Carlo Tree Search):
+- Builds search tree through repeated simulations
+- Uses UCT for balancing exploration-exploitation
+- No explicit value function, uses Monte Carlo estimates
+- More robust to model inaccuracies through sampling
+- Better at exploring complex action spaces systematically
+
+On this GridWorld:
+Both algorithms successfully navigate from start (4,0) to goal (0,5).
+RTDP converges faster as epsilon decays, showing consistent low-step
+solutions. MCTS maintains more consistent performance across episodes
+but requires more computation per decision. RTDP is better suited for
+this deterministic-like problem with accurate model, while MCTS would
+shine in problems with larger branching factors or uncertain dynamics.
